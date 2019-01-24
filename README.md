@@ -44,7 +44,7 @@ B. city-path-finder-service
 
 city-path-finder-controller:
 
-* __/path-finder/connected/origin/{origin}/destination/{destination}__: Check of two cities are connected (in undirected graph)
+* __/path-finder/connected/origin/{origin}/destination/{destination}__: Check if two cities are connected (in undirected graph)
 * __/path-finder/paths-all/origin/{origin}/destination/{destination}__: Get all paths from origin to destination
 * __/path-finder/paths-shortest/origin/{origin}/destination/{destination}__: Get shortest paths from origin to destination
 
