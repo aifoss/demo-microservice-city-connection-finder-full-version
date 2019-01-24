@@ -67,8 +67,11 @@ hystrix-fallback-demo-controller:
 2. Issue the following commands in separate terminal windows in the specified order:
 
    java -jar netflix-eureka-discovery-service-1.jar NetflixEurekaDiscoveryServiceApplication.class
+   
    java -jar netflix-zuul-api-gateway-service-1.jar NetflixZuulApiGatewayServiceApplication.class
+   
    java -jar city-graph-builder-service-1.jar CityGraphBuilderServiceApplication.class
+   
    java -jar city-path-finder-service-1.jar CityPathFinderServiceApplication.class
 
 3. To test Eureka service discovery, go to http://localhost:8761
