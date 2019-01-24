@@ -1,0 +1,75 @@
+Albany
+Alexander City
+Athens
+Atlanta
+Austin
+Baton Rouge
+Bedford
+Boaz
+Boston
+Cedar Rapids
+Chicago
+Coal City
+Dayton
+Delphi
+Denver
+East Point
+Eureka
+Florence
+Frankfort
+Freeport
+Gainsville
+Hallowell
+Hartford
+Highland
+Houston
+Indianapolis
+Ipswich
+Jacksonville
+Jefferson City
+Junction
+Kensington
+Kingston
+Lakeville
+Lancaster
+Las Vegas
+Lincoln
+Los Angeles
+Marcellus
+Marine City
+Meridian
+Nashville
+New Britain
+New Orleans
+New York
+Newark
+Oakdale
+Ocean View
+Oklahoma City
+Oxford
+Palm Beach
+Philadelphia
+Phoenix
+Providence
+Raleigh
+Rochester
+Roswell
+Sacramento
+Salt Lake City
+San Francisco
+Seattle
+Springfield
+Superior
+Talahasse
+Topeka
+Trenton
+Tucson
+Twin Falls
+Union
+Vicksburg
+Vienna
+Washington DC
+Wilmington
+Yazoo City
+Yorkville
+Zebulon

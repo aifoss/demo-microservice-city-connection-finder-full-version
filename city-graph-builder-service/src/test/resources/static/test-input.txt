@@ -1,0 +1,6 @@
+Philadelphia, New York
+Philadelphia, Boston
+Philadelphia, Washington DC
+Boston, New York
+Washington DC, Seattle
+Seattle, New York

@@ -1,0 +1,104 @@
+Albany, Alexander City
+Alexander City, Athens
+Athens, Atlanta
+Atlanta, Austin
+Austin, Baton Rouge
+Baton Rouge, Bedford
+Bedford, Boaz
+Boaz, Boston
+Boston, Cedar Rapids
+Cedar Rapids, Chicago
+Chicago, Coal City
+Coal City, Dayton
+Dayton, Delphi
+Delphi, Denver
+Denver, East Point
+East Point, Eureka
+Eureka, Florence
+Florence, Frankfort
+Frankfort, Freeport
+Freeport, Gainsville
+Gainsville, Hallowell
+Hallowell, Hartford
+Hartford, Highland
+Highland, Houston 
+Houston, Indianapolis
+Indianapolis, Ipswich
+Ipswich, Jacksonville
+Jacksonville, Jefferson City
+Jefferson City, Junction
+Junction, Kensington
+Kensington, Kingston
+Kingston, Lakeville
+Lakeville, Lancaster
+Lancaster, Las Vegas
+Las Vegas, Lincoln
+Lincoln, Los Angeles
+Los Angeles, Marcellus
+Marcellus, Marine City
+Marine City, Meridian
+Meridian, Nashville
+Nashville, New Britain
+New Britain, New Orleans
+New Orleans, New York
+New York, Newark
+Newark, Oakdale
+Oakdale, Ocean View
+Ocean View, Oklahoma City
+Oklahoma City, Oxford
+Oxford, Palm Beach
+Palm Beach, Philadelphia
+Philadelphia, Phoenix
+Phoenix, Providence
+Providence, Raleigh
+Raleigh, Rochester
+Rochester, Roswell
+Roswell, Sacramento
+Sacramento, Salt Lake City
+Salt Lake City, San Francisco
+San Francisco, Seattle
+Seattle, Springfield
+Springfield, Superior
+Superior, Talahasse
+Talahasse, Topeka
+Topeka, Trenton
+Trenton, Tucson
+Tucson, Twin Falls
+Twin Falls, Union
+Union, Vicksburg
+Vicksburg, Vienna
+Vienna, Wasghington DC
+Washington DC, Wilmington
+Wilmington, Yazoo City
+Yazoo City, Yorkville
+Yorkville, Zebulon
+
+Philadelphia, Atlanta
+Philadelphia, Austin
+Philadelphia, Chicago
+Philadelphia, Denver
+Philadelphia, Houston
+Philadelphia, Los Angeles
+Philadelphia, Nashville
+Philadelphia, New York
+Philadelphia, Newark
+Philadelphia, San Francisco
+Philadelphia, Seattle
+Philadelphia, Washington DC
+
+Austin, Chicago
+Chicago, Denver
+Denver, Houston
+Houston, Los Angeles
+Los Angeles, Nashville
+Nashville, New York
+Phoenix, San Francisco
+Washington DC, Seattle
+
+Chicago, Seattle
+Los Angeles, Seattle
+New York, Seattle
+
+Newark, San Francisco
+
+Washington DC, Atlanta
