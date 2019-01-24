@@ -33,26 +33,26 @@ A. city-graph-builder-service
 
 city-graph-builder-controller:
 
-* /graph-builder/graph: Get graph of cities
-* /graph-builder/graph/nodes: Get graph node set
-* /graph-builder/graph/adj: Get graph adjacency map
-* /graph-builder/directed-graph: Get directed graph of cities
-* /graph-builder/directed-graph/nodes: Get directed graph node set
-* /graph-builder/directed-graph/adj: Get directed graph adjacency map
+* __/graph-builder/graph__: Get graph of cities
+* __/graph-builder/graph/nodes__: Get graph node set
+* __/graph-builder/graph/adj__: Get graph adjacency map
+* __/graph-builder/directed-graph__: Get directed graph of cities
+* __/graph-builder/directed-graph/nodes__: Get directed graph node set
+* __/graph-builder/directed-graph/adj__: Get directed graph adjacency map
 
 B. city-path-finder-service
 
 city-path-finder-controller:
 
-* /path-finder/connected/origin/{origin}/destination/{destination}: Check of two cities are connected (in undirected graph)
-* /path-finder/paths-all/origin/{origin}/destination/{destination}: Get all paths from origin to destination
-* /path-finder/paths-shortest/origin/{origin}/destination/{destination}: Get shortest paths from origin to destination
+* __/path-finder/connected/origin/{origin}/destination/{destination}__: Check of two cities are connected (in undirected graph)
+* __/path-finder/paths-all/origin/{origin}/destination/{destination}__: Get all paths from origin to destination
+* __/path-finder/paths-shortest/origin/{origin}/destination/{destination}__: Get shortest paths from origin to destination
 
 hystrix-fallback-demo-controller:
 
-* /hystrix/connected/origin/{origin}/destination/{destination}: Demonstrate Hystrix fallback for method to check city connections
-* /hystrix/paths-all/origin/{origin}/destination/{destination}: Demonstrate Hystrix fallback for method to get all paths
-* /hystrix/paths-shortest/origin/{origin}/destination/{destination}: Demonstrate Hystrix fallback for method to get shortest paths
+* __/hystrix/connected/origin/{origin}/destination/{destination}__: Demonstrate Hystrix fallback for method to check city connections
+* __/hystrix/paths-all/origin/{origin}/destination/{destination}__: Demonstrate Hystrix fallback for method to get all paths
+* __/hystrix/paths-shortest/origin/{origin}/destination/{destination}__: Demonstrate Hystrix fallback for method to get shortest paths
 
 ### Architecture
 
