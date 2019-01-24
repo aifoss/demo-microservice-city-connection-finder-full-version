@@ -17,22 +17,22 @@ import com.fasterxml.jackson.databind.ObjectMapper;
  */
 public class CityGraph implements Cloneable {
 
-    protected SortedSet<String> nodeSet;
-    protected SortedMap<String, SortedSet<String>> adjMap;
+	protected SortedSet<String> nodeSet;
+	protected SortedMap<String, SortedSet<String>> adjMap;
 
-    public CityGraph() {
-        nodeSet = new TreeSet<>();
-        adjMap = new TreeMap<>();
-    }
+	public CityGraph() {
+		nodeSet = new TreeSet<>();
+		adjMap = new TreeMap<>();
+	}
     
 	public void addEdge(String v, String w) {
-        nodeSet.add(v);
-        nodeSet.add(w);
+		nodeSet.add(v);
+		nodeSet.add(w);
 
-        adjMap.computeIfAbsent(v, k -> new TreeSet<>()).add(w);
-        adjMap.computeIfAbsent(w, k -> new TreeSet<>()).add(v);
-    }
-
+		adjMap.computeIfAbsent(v, k -> new TreeSet<>()).add(w);
+		adjMap.computeIfAbsent(w, k -> new TreeSet<>()).add(v);
+	}
+	
 	@Override
 	public CityGraph clone() {
 		CityGraph newGraph = new CityGraph();
@@ -71,24 +71,24 @@ public class CityGraph implements Cloneable {
 		
 		return hash;
 	}
-	
+	    
     public SortedSet<String> getNodeSet() {
-        return nodeSet;
-    }
+		return nodeSet;
+	}
 
-    public void setNodeSet(SortedSet<String> nodeSet) {
-        this.nodeSet = nodeSet;
-    }
+	public void setNodeSet(SortedSet<String> nodeSet) {
+		this.nodeSet = nodeSet;
+	}
 
-    public SortedMap<String, SortedSet<String>> getAdjMap() {
-        return adjMap;
-    }
+	public SortedMap<String, SortedSet<String>> getAdjMap() {
+		return adjMap;
+	}
 
-    public void setAdjMap(SortedMap<String, SortedSet<String>> adjMap) {
-        this.adjMap = adjMap;
-    }
-    
-    @Override
+	public void setAdjMap(SortedMap<String, SortedSet<String>> adjMap) {
+		this.adjMap = adjMap;
+	}
+
+	@Override
 	public String toString() {
 		try {
 			return new ObjectMapper().writeValueAsString(this);

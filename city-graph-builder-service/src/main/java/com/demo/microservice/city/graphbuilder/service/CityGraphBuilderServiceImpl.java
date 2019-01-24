@@ -36,11 +36,11 @@ public class CityGraphBuilderServiceImpl implements CityGraphBuilderService {
 		CityGraph graph = new CityGraph();
 		build(graph);
 
-        LOGGER.info("Undirected Graph: {}", graph);
-        LOGGER.info("Building undirected graph complete");
+		LOGGER.info("Undirected Graph: {}", graph);
+		LOGGER.info("Building undirected graph complete");
         
-        return graph;
-    }
+		return graph;
+	}
 	
 	@Override
 	public DirectedCityGraph buildDirectedGraph() throws IOException {
