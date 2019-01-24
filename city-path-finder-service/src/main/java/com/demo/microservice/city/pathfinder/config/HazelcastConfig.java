@@ -33,7 +33,7 @@ public class HazelcastConfig {
 	protected static final EvictionPolicy EVICTION_POLICY = EvictionPolicy.LFU;
 	
 	@Bean
-    public Config hazelcastConfig() {
+	public Config hazelcastConfig() {
         Config config = new Config();
         
         config.setInstanceName(HAZELCAST_INSTANCE_NAME);
@@ -60,7 +60,7 @@ public class HazelcastConfig {
         config.getMapConfigs().put(SHORTEST_PATH_CACHE_NAME, shortestPathCache);
         
         return config;
-    }
+	}
 
 	@Bean
 	public HazelcastInstance hazelcastInstance() {
@@ -68,8 +68,8 @@ public class HazelcastConfig {
 	}
 	
 	@Bean
-    public CacheManager cacheManager() {
-        return new HazelcastCacheManager(hazelcastInstance());
-    }
+	public CacheManager cacheManager() {
+		return new HazelcastCacheManager(hazelcastInstance());
+	}
 
 }

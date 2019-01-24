@@ -44,28 +44,28 @@ public class CityPathFinderServiceImpl implements CityPathFinderService {
 		if (origin.equals(destination)) {
         	LOGGER.info("Identical city {{}} for origin and destination, returning positive response", origin);
         	result.setConnected(YES);
-            return result;
+        	return result;
         }
 		
 		if (!graph.getNodeSet().contains(origin)) {
 			LOGGER.info("Unrecognized origin: {{}}, returning negative response", origin);
 			result.setConnected(NO);
-            return result;
+			return result;
 		}
 		if (!graph.getNodeSet().contains(destination)) {
 			LOGGER.info("Unrecognized destination: {{}}, returning negative response", destination);
 			result.setConnected(NO);
-            return result;
+			return result;
 		}
 		
-        if (graph.getAdjMap().get(origin).contains(destination)) {
-        	LOGGER.info("Diret connection exists, returning positive response");
-        	result.setConnected(YES);
-            return result;
-        }
+		if (graph.getAdjMap().get(origin).contains(destination)) {
+			LOGGER.info("Diret connection exists, returning positive response");
+			result.setConnected(YES);
+			return result;
+		}
         
-        return checkIfIndirectlyConnected(graph, origin, destination, result);
-    }
+		return checkIfIndirectlyConnected(graph, origin, destination, result);
+	}
 		
 	@Override
 	@Cacheable(HazelcastConfig.ALL_PATH_CACHE_NAME)
@@ -143,33 +143,33 @@ public class CityPathFinderServiceImpl implements CityPathFinderService {
 		LOGGER.info("Checking indirect connection between {{}} and {{}}", origin, destination);
 		
 		Set<String> visited = new HashSet<>();
-        Queue<String> q = new LinkedList<>();
+		Queue<String> q = new LinkedList<>();
 
-        visited.add(origin);
-        q.add(origin);
+		visited.add(origin);
+		q.add(origin);
 
-        while (!q.isEmpty()) {
-            String node = q.remove();
+		while (!q.isEmpty()) {
+			String node = q.remove();
 
-            for (String adj : graph.getAdjMap().get(node)) {
-                if (adj.equals(destination)) {
-                	LOGGER.info("Connection found, returning positive response");
-                	result.setConnected(YES);
-                    return result;
-                }
+			for (String adj : graph.getAdjMap().get(node)) {
+				if (adj.equals(destination)) {
+					LOGGER.info("Connection found, returning positive response");
+					result.setConnected(YES);
+					return result;
+				}
 
-                if (!visited.contains(adj)) {
-                    visited.add(adj);
-                    q.add(adj);
-                }
-            }
-        }
+				if (!visited.contains(adj)) {
+					visited.add(adj);
+					q.add(adj);
+				}
+			}
+		}
         
-        result.setConnected(NO);
+		result.setConnected(NO);
  
-        LOGGER.info("Connection not found, returning negative response");
+		LOGGER.info("Connection not found, returning negative response");
         
-        return result;
+		return result;	
 	}
 	
 	private void findAllPaths(
