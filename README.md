@@ -56,10 +56,10 @@ hystrix-fallback-demo-controller:
 
 ### Architecture
 
-* Service discovery using Netflix Eureka
-* API gateway service using Netflix Zuul
-* Routing and load balancing using Netflix Ribbon
-* Caching using Hazelcast
+* Service discovery using Netflix Eureka (Go to Eureka service URI)
+* API gateway service using Netflix Zuul (See log for evidence of filtering of API requests to city-graph-builder-service)
+* Load balancing using Netflix Ribbon (Try running multiple instances of city-graph-builder-service with different ports and check Zuul service log)
+* Caching using Hazelcast (Try making same API calls to city-path-finder-service and check log)
 
 ## Testing Instructions
 
