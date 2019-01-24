@@ -70,6 +70,7 @@ hystrix-fallback-demo-controller:
    java -jar netflix-zuul-api-gateway-service-1.jar NetflixZuulApiGatewayServiceApplication.class
    java -jar city-graph-builder-service-1.jar CityGraphBuilderServiceApplication.class
    java -jar city-path-finder-service-1.jar CityPathFinderServiceApplication.class
-   
-3. To test city-graph-builder-service API, go to http://localhost:8000/swagger-ui.html
-4. To test city-path-finder-service API, go to http://localhost:8010/swagger-ui.html
+
+3. To test Eureka service discovery, go to http://localhost:8761
+4. To test city-graph-builder-service API, go to http://localhost:8000/swagger-ui.html
+5. To test city-path-finder-service API, go to http://localhost:8010/swagger-ui.html
