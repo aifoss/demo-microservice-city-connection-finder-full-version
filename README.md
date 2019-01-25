@@ -60,6 +60,7 @@ hystrix-fallback-demo-controller:
 * API gateway service using Netflix Zuul (See log for evidence of filtering of API requests to city-graph-builder-service)
 * Load balancing using Netflix Ribbon (Try running multiple instances of city-graph-builder-service with different ports and check Zuul service log)
 * Caching using Hazelcast (Try making same API calls to city-path-finder-service and check log)
+* Fallback mechanism for fault tolerance using Netflix Hystrix (Try Hystrix fallback demo API)
 
 ## Testing Instructions
 
