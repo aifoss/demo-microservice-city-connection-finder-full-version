@@ -96,7 +96,7 @@ public class CityPathFinderServiceImpl implements CityPathFinderService {
 			List<String> longestPath = sortedPaths.get(sortedPaths.size()-1);
 			
 			result.setPaths(sortedPaths);
-			result.setNumPaths(result.getPaths().size());
+			result.setNumPaths(sortedPaths.size());
 			result.setShortestPathSize(shortestPath.size());
 			result.setLongestPathSize(longestPath.size());
 			result.setConnected(YES);
