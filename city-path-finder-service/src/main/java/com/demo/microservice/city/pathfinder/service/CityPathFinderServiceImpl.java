@@ -42,10 +42,10 @@ public class CityPathFinderServiceImpl implements CityPathFinderService {
 		CityConnectionInfo result = new CityConnectionInfo(origin, destination);
 		
 		if (origin.equals(destination)) {
-        	LOGGER.info("Identical city {{}} for origin and destination, returning positive response", origin);
-        	result.setConnected(YES);
-        	return result;
-        }
+			LOGGER.info("Identical city {{}} for origin and destination, returning positive response", origin);
+			result.setConnected(YES);
+			return result;
+		}
 		
 		if (!graph.getNodeSet().contains(origin)) {
 			LOGGER.info("Unrecognized origin: {{}}, returning negative response", origin);
