@@ -8,7 +8,7 @@ Go [here](https://github.com/aifoss/demo-microservice-city-connection-finder-pro
 * Java 1.8
 * Spring Boot
 * Spring Cloud
-* Netflix OSS (Eureka, Ribbon, Zuul, Hystrix)
+* Netflix OSS (Eureka, Ribbon, Zuul, Feign, Hystrix)
 * Hazelcast
 * JUnit, Mockito 
 * Spring Tool Suite
