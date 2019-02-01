@@ -34,32 +34,32 @@ public class HazelcastConfig {
 	
 	@Bean
 	public Config hazelcastConfig() {
-        Config config = new Config();
-        
-        config.setInstanceName(HAZELCAST_INSTANCE_NAME);
-
-        MapConfig graphCache = new MapConfig();
-        config.getMapConfigs().put(GRAPH_CACHE_NAME, graphCache);
-        
-        MapConfig directedGraphCache = new MapConfig();
-        config.getMapConfigs().put(DIRECTED_GRAPH_CACHE_NAME, directedGraphCache);
-        
-        MapConfig cityConnectionCache = new MapConfig();
-        cityConnectionCache.setTimeToLiveSeconds(TIME_TO_LIVE_IN_SECONDS);
-        cityConnectionCache.setEvictionPolicy(EVICTION_POLICY);
-        config.getMapConfigs().put(CITY_CONNECTION_CACHE_NAME, cityConnectionCache);
-
-        MapConfig allPathCache = new MapConfig();
-        allPathCache.setTimeToLiveSeconds(TIME_TO_LIVE_IN_SECONDS);
-        allPathCache.setEvictionPolicy(EVICTION_POLICY);
-        config.getMapConfigs().put(ALL_PATH_CACHE_NAME, allPathCache);
-
-        MapConfig shortestPathCache = new MapConfig();
-        shortestPathCache.setTimeToLiveSeconds(TIME_TO_LIVE_IN_SECONDS);
-        shortestPathCache.setEvictionPolicy(EVICTION_POLICY);
-        config.getMapConfigs().put(SHORTEST_PATH_CACHE_NAME, shortestPathCache);
-        
-        return config;
+		Config config = new Config();
+		
+		config.setInstanceName(HAZELCAST_INSTANCE_NAME);
+		
+		MapConfig graphCache = new MapConfig();
+		config.getMapConfigs().put(GRAPH_CACHE_NAME, graphCache);
+		
+		MapConfig directedGraphCache = new MapConfig();
+		config.getMapConfigs().put(DIRECTED_GRAPH_CACHE_NAME, directedGraphCache);
+		
+		MapConfig cityConnectionCache = new MapConfig();
+		cityConnectionCache.setTimeToLiveSeconds(TIME_TO_LIVE_IN_SECONDS);
+		cityConnectionCache.setEvictionPolicy(EVICTION_POLICY);
+		config.getMapConfigs().put(CITY_CONNECTION_CACHE_NAME, cityConnectionCache);
+		
+		MapConfig allPathCache = new MapConfig();
+		allPathCache.setTimeToLiveSeconds(TIME_TO_LIVE_IN_SECONDS);
+		allPathCache.setEvictionPolicy(EVICTION_POLICY);
+		config.getMapConfigs().put(ALL_PATH_CACHE_NAME, allPathCache);
+		
+		MapConfig shortestPathCache = new MapConfig();
+		shortestPathCache.setTimeToLiveSeconds(TIME_TO_LIVE_IN_SECONDS);
+		shortestPathCache.setEvictionPolicy(EVICTION_POLICY);
+		config.getMapConfigs().put(SHORTEST_PATH_CACHE_NAME, shortestPathCache);
+		
+		return config;
 	}
 
 	@Bean
